@@ -77,5 +77,5 @@ def index():
                 stringg=stringg+ '<tr><td>'  + str(customer_data_array[i]) +'</td>' + table_data +'</tr>'
                 
                 
-    return render_template('index.html',pred=stringg)
+    return render_template('index_Akash.html',pred=stringg)
         
