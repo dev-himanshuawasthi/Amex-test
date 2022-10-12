@@ -11,8 +11,8 @@
   <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>-->
   <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
   
-  <script src="./static/js/jquery.min.js"></script>
-  <script src="./static/js/bootstrap.min.js"></script>
+  
+  
   
   <style>
     /* Remove the navbar's default margin-bottom and rounded borders */ 
@@ -222,20 +222,23 @@
 	$(document).ready(function(){
 	
 
-	$("#form1").css('display', 'none');
-	$("#form3").css('display', 'block');
+	$("#form1").hide()
+	$("#form3").show()
 
   
     $("#previous").on("click",function(){
 	  console.log("enter");
-    $("#form1").css('display', 'block');
-    $("#form3").css('display', 'none');
+    $("#form1").show()
+    $("#form3").hide()
     });
   });
 
 </script>
 <!--  Scripts-->
+  <script src="./static/js/jquery.min.js"></script>
+  <script src="./static/js/bootstrap.min.js"></script>
   <script src="./static/js/materialize.js"></script>
+ 	
   
 </body>
 </html>
