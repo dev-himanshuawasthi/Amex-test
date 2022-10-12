@@ -194,7 +194,7 @@
     </div>
     </form>
 
-    <div class="col-sm-4 text-left sidenav" id="form3"> 
+    <div class="col-sm-offset-2 col-sm-4 text-left sidenav" id="form3"> 
       
         <img class="img-fluid imgwidth" src="./static/uploads/top-features.jpeg">
       
@@ -218,9 +218,22 @@
       	document.getElementById('file_name').value = this.value.slice(12,100);
     };
   </script>	
+<script>
+	$(document).ready(function(){
+	
 
+	$('#form1).css('display', 'none');
+	$('#form3).css('display', 'block');
 
+  
+    $("#previous").on("click",function(){
+	  console.log("enter");
+    $('#form1).css('display', 'block');
+    $('#form3).css('display', 'none');
+    });
+  });
 
+</script>
 <!--  Scripts-->
   <script src="./static/js/materialize.js"></script>
   
