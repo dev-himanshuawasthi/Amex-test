@@ -23,7 +23,9 @@ def allowed_file(filename):
 #Route to home page
 @app.route("/",methods=["GET","POST"])
 def index():
-
+    stringg=""
+    
+    
     # Execute if request is get
     if request.method == "GET":
         return render_template("index.html")
