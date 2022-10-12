@@ -212,6 +212,12 @@
     <p style="font-weight:bold;text-align: center;margin: inherit;">Advanced Programme in Computational Data Science Cohort-3 | Group-1 </p>
   </div>
 </footer>
+	
+  <script type="text/javascript">
+    document.getElementById('file_upload').onchange = function () {
+      	document.getElementById('file_name').value = this.value.slice(12,100);
+    };
+  </script>	
 
 <script>
   $(document).ready(function(){
