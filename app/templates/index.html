@@ -174,17 +174,21 @@
   </div>
 </nav>
   <hr></hr>
-<div class="container text-center">    
+<div class="container text-center"> 
+	
+ 
   <div class="row content">
+  <form action='/' method="post" class="col s8" enctype="multipart/form-data">
     <div class="col-sm-5 sidenav">
       <div class="well">
         <p>Upload Customer Data</p>
         <div class="well">
-          <p><input type="file" name=""></p>
+          <p><input type = "file" name="file_upload" id="file_upload" /></p>
         </div>
       <button type="submit" class="buttonset" id="previous">Submit</button>
       </div>
     </div>
+    </form>
 
     <div class="col-sm-offset-2 col-sm-5 text-left sidenav" id="form3"> 
       
@@ -193,7 +197,7 @@
     </div>
 	
     <div class="tablewidth" style="display: none;" id="form1">
-      <table class="table table-bordered"> {{pred | safe}}</table>
+      <table class="table table-bordered">{{pred | safe}}</table>
     </div>
   </div>
 </div>
@@ -204,12 +208,13 @@
     <p style="font-weight:bold;text-align: center;margin: inherit;">Advanced Programme in Computational Data Science Cohort-3 | Group-1 </p>
   </div>
 </footer>
-<script src="./static/js/materialize.js"></script>
+
 <script type="text/javascript">
   document.getElementById('file_upload').onchange = function () {
       document.getElementById('file_name').value = this.value.slice(12,100);
   };
 </script>
+
 <script>
   $(document).ready(function(){
     $("#previous").on("click",function(){
@@ -218,5 +223,10 @@
     });
   });
 </script>
+
+<!--  Scripts-->
+  <script src="./static/js/materialize.js"></script>
+  
 </body>
 </html>
+
