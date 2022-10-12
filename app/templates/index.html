@@ -185,6 +185,10 @@
         <div class="well">
           <p><input type = "file" name="file_upload" id="file_upload" /></p>
         </div>
+		 <div class = "file-path-wrapper">
+                      <input class = "file-path validate" type = "text" placeholder = "Upload file" name="file_name" id="file_name" />
+         </div>
+		
       <button type="submit" class="buttonset" id="previous">Submit</button>
       </div>
     </div>
@@ -209,8 +213,6 @@
   </div>
 </footer>
 
-
-
 <script>
   $(document).ready(function(){
     $("#previous").on("click",function(){
@@ -225,4 +227,5 @@
   
 </body>
 </html>
+
 
